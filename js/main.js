@@ -49,7 +49,6 @@ jQuery(document).ready(function () {
          }
       });
 
-
       button.on('click', (e) => {
          e.preventDefault();
          jQuery('html').animate({ scrollTop: 0 }, 1000);
@@ -59,6 +58,10 @@ jQuery(document).ready(function () {
    //--//
 
 
+   $('.mainscreen__arrow-down-link').on('click', function (e) {
+      $('html,body').stop().animate({ scrollTop: $('#top-news-big').offset().top }, 500);
+      e.preventDefault();
+   });
 
 
    //===============================BURGER MENU============//
@@ -79,7 +82,18 @@ jQuery(document).ready(function () {
 
    //===============================Showimg-search-block-on click============//
    jQuery('.search-btn').click(function (event) {
-      jQuery('.search-text').toggleClass('active');
+      jQuery('.search-text').addClass('active');
+   });
+
+
+
+
+   $(document).mouseup(function (e) { // отслеживаем событие клика по веб-документу
+      var block = $(".search-text"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+      if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
+         && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+         block.removeClass('active'); // если условия выполняются - скрываем наш элемент
+      }
    });
 
 
@@ -93,6 +107,10 @@ jQuery(document).ready(function () {
       dots: false,
    });
 
+   jQuery(".slider-breed").slick({
+      dots: false,
+   });
+
 
    //================================Showimg-search-block-on key press on main screen============//
    $('.js-input').keyup(function () {
@@ -102,6 +120,21 @@ jQuery(document).ready(function () {
          $('.hidden-input').slideUp();
       }
       return false;
+   });
+
+   $(document).mouseup(function (e) {
+      var container = $(".hidden-input");
+      if (container.has(e.target).length === 0) {
+         container.slideUp();
+      }
+   });
+
+   ;
+
+
+   $('.').on('click', function (e) {
+      $('html,body').stop().animate({ scrollTop: $('#some_point').offset().top }, 1000);
+      e.preventDefault();
    });
 
 });

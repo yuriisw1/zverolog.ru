@@ -1,0 +1,469 @@
+.about-breed {
+   margin: 40px 15px;
+   &__item {
+      border-radius: 20px;
+      padding: 0px;
+      background: $accent;
+      img {
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+      }
+   }
+   &__item-body {
+      padding: 10px 20px 10px 20px;
+      h3 {
+         display: block;
+         padding-top: 8px;
+         font-size: 22px;
+         font-weight: 600;
+         color: #fff;
+      }
+      span {
+         display: block;
+         padding-top: 8px;
+         font-size: 16px;
+      }
+   }
+   &__item-btn {
+      border-radius: 20px;
+      margin: 30px 0px 20px 0px;
+      background: #fff;
+      padding: 0px 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid transparent;
+      position: relative;
+      z-index: 200;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      span {
+         font-size: 20px;
+         font-weight: 500;
+         padding-bottom: 7px;
+      }
+      &:hover {
+         border: 3px solid #fff;
+         background: none;
+         span {
+            color: #fff;
+         }
+      }
+   }
+}
+
+.info-about-species {
+   &__subtitle {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 14px;
+   }
+   &__links {
+      margin-top: 45px;
+   }
+   &__links-list {
+      display: flex;
+   }
+   &__link {
+      font-size: 14px;
+      line-height: 19px;
+      border: 2px solid $accent;
+      padding: 10px;
+      margin: 0px 3px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         background: $accent;
+         a {
+            color: #fff;
+         }
+      }
+      &:first-child {
+         border-top-left-radius: 15px;
+         border-bottom-left-radius: 15px;
+      }
+      &:last-child {
+         border-top-right-radius: 15px;
+         border-bottom-right-radius: 15px;
+      }
+   }
+   &__quote {
+      position: relative;
+      margin: 100px 0px 100px 40px;
+      p {
+         font-size: 16px;
+      }
+      &::before {
+         position: absolute;
+         content: "";
+         top: -40px;
+         left: -40px;
+         width: 35px;
+         height: 35px;
+         background: url(../img/icons/quote-left.svg) 0 0 / cover no-repeat;
+      }
+      &::after {
+         position: absolute;
+         content: "";
+         bottom: -40px;
+         right: -30px;
+         width: 35px;
+         height: 35px;
+         background: url(../img/icons/quote-left.svg) 0 0 / cover no-repeat;
+      }
+   }
+   &__share {
+      margin-top: 50px;
+   }
+   &__share-label {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 5px;
+   }
+   &__share-list {
+      display: flex;
+      flex-direction: column;
+   }
+   &__share-link {
+      border-radius: 20px;
+      margin-top: 17px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+
+   &__rates {
+      padding: 0px 0px 80px 0px;
+   }
+   &__enumeration {
+      background: $accent-2;
+      margin: 15px 0px;
+      padding: 15px 10px;
+      border-radius: 20px;
+   }
+   &__enumeration-title {
+      position: relative;
+      max-width: 300px;
+      transition: all 0.3s ease 0s;
+      &::after {
+         position: absolute;
+         content: "";
+         top: 7px;
+         right: 20px;
+         border: 12px solid transparent;
+         border-top: 18px solid $accent;
+         transition: all 0.3s ease 0s;
+      }
+   }
+   &__enumeration-title.active {
+      transition: all 0.3s ease 0s;
+      &::after {
+         top: -3px;
+         transform: rotateZ(180deg);
+         border-top: 18px solid #f02f15;
+      }
+   }
+
+   &__enumeration-body {
+      display: none;
+   }
+
+   &__enumeration-list {
+      padding-left: 20px;
+      margin-top: 10px;
+      li {
+         padding: 4px 0px;
+      }
+   }
+   &__enumeration-link {
+      font-size: 16px;
+      text-decoration: underline;
+   }
+   &__content {
+      .title-h2 {
+         margin: 80px 0px 20px 40px;
+      }
+      img {
+         width: 100%;
+         border-radius: 10px;
+         margin: 20px 0px;
+      }
+   }
+   &__comment {
+      margin-top: 70px;
+      .title-h2 {
+         margin-bottom: 40px;
+      }
+   }
+   &__comment-user-and-data {
+      display: flex;
+      justify-content: space-between;
+      color: $accent;
+      font-weight: 500;
+      font-size: 16px;
+   }
+   &__comment-text {
+      font-weight: 600;
+      font-size: 15px;
+      color: #000000;
+      margin-top: 30px;
+   }
+}
+
+.info-about-species .catalog-content__item {
+   max-height: 310px;
+   min-height: 51%;
+   max-width: 255px;
+}
+
+.rate-column {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 30px;
+   span {
+      display: block;
+      margin-top: 7px;
+      width: 100%;
+      height: 20px;
+      border-radius: 20px;
+      max-width: 100px;
+   }
+   &__title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 10px;
+      text-align: center;
+   }
+   &__yellow {
+      .rate-column__span {
+         &:nth-child(1) {
+            background: $accent;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.7s;
+         }
+         &:nth-child(2) {
+            background: $accent;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.5s;
+         }
+         &:nth-child(3) {
+            background: $accent;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.3s;
+         }
+         &:nth-child(4) {
+            background: $accent;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.1s;
+         }
+      }
+   }
+   &__green {
+      .rate-column__span {
+         &:nth-child(1) {
+            background: #4bc82d;
+         }
+         animation: 0.3s ease-in-out both rate-animation;
+         animation-delay: 0.9s;
+         &:nth-child(2) {
+            background: #4bc82d;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.7s;
+         }
+         &:nth-child(3) {
+            background: #4bc82d;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.5s;
+         }
+         &:nth-child(4) {
+            background: #4bc82d;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.3s;
+         }
+         &:nth-child(5) {
+            background: #4bc82d;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.1s;
+         }
+      }
+   }
+   &__red {
+      .rate-column__span {
+         &:first-child {
+            background: #f02f15;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.3s;
+         }
+         &:nth-child(2) {
+            background: #f02f15;
+            animation: 0.3s ease-in-out both rate-animation;
+            animation-delay: 0.1s;
+         }
+      }
+   }
+}
+
+@keyframes rate-animation {
+   0% {
+      opacity: 0;
+      transform: scale(0);
+   }
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+.commentbar {
+   margin: 70px 0px 0px 0px;
+   background: $accent-2;
+   border-radius: 20px;
+   padding: 25px 15px 25px 15px;
+   &__title {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 32px;
+      letter-spacing: 0.02em;
+      color: #333333;
+      position: relative;
+      margin-left: 40px;
+      &::before {
+         position: absolute;
+         content: "";
+         top: 12px;
+         left: -40px;
+         width: 30px;
+         height: 25px;
+         background: url(../img/icons/chat.svg) 0 0 / cover no-repeat;
+      }
+   }
+   &__form {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+   }
+   &__input-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 20px;
+      margin-bottom: 4px;
+   }
+   &__input {
+      display: inline-block;
+      width: 100%;
+      height: 35px;
+      font-size: 16px;
+      padding-left: 10px;
+      border-radius: 20px;
+      border: 1px solid $accent;
+      &:hover,
+      &:focus {
+         box-shadow: 0px 2px 10px rgba(139, 139, 139, 0.7);
+      }
+   }
+   &__textarea {
+      border-radius: 20px;
+      border: 1px solid $accent;
+      display: inline-block;
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      max-height: 200px;
+      &:hover,
+      &:focus {
+         box-shadow: 0px 2px 10px rgba(139, 139, 139, 0.7);
+      }
+   }
+   button {
+      color: $accent;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-left: 20px;
+      border-bottom: 2px solid $accent;
+      border-left: 2px solid transparent;
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      background: none;
+      padding: 10px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         border-left: 2px solid $accent;
+         border-top: 2px solid $accent;
+         border-right: 2px solid $accent;
+      }
+      &:focus {
+         background: $accent;
+         color: #fff;
+      }
+   }
+}
+
+.news-item {
+   &__date {
+      margin-bottom: 20px;
+   }
+}
+
+.info-about-species__photo {
+   margin: 0px 0px 30px;
+   img {
+      margin-top: 30px;
+   }
+}
+
+.info-about-species__video{
+   padding: 30px 15px 50px 15px;
+}
+
+.thumb-wrap {
+   position: relative;
+   padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+   height: 0;
+   overflow: hidden;
+}
+
+.thumb-wrap iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-width: 0;
+   outline-width: 0;
+}
+
+.news-btn-photo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+   font-size: 16px;
+   background: $accent;
+   padding: 10px;
+   margin-top: 30px;
+   margin-left: 30px;
+   border-radius: 20px;
+   border: 4px solid transparent;
+   transition: all 0.3s ease 0s;
+   img {
+      margin-top: 0px;
+   }
+   span {
+      color: #fff;
+      margin-top: 1px;
+   }
+   &:hover {
+      border: 4px solid $accent;
+      background: none;
+      span {
+         color: $text;
+      }
+   }
+}

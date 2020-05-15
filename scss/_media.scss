@@ -1,0 +1,539 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+   .info-about-species .catalog-content__item-likes {
+      left: 78%;
+      bottom: 120px;
+      transform: translate(-42%);
+   }
+   .top-news__big-link {
+      right: 67%;
+   }
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+   .search-text {
+      transition: all 0.3s ease 0s;
+      display: none;
+   }
+   .search-btn {
+      border: transparent;
+      left: 15px;
+      top: 15px;
+      z-index: 150;
+   }
+   .search-box {
+      padding: 5px 37px 5px 21px;
+      transition: all 0.3s ease 0s;
+   }
+   .search-box .search-text.active {
+      display: block;
+      position: absolute;
+      left: -150px;
+      top: 60px;
+      z-index: 200;
+      transition: all 0.3s ease 0s;
+      background: #fff;
+      color: $text;
+      padding: 12px;
+      border-radius: 20px;
+      border: 2px solid $accent;
+      transform: translate(-5%);
+   }
+   .top-news__sm {
+      margin: 5px 10px;
+   }
+   .top-news {
+      padding-top: 200px;
+      &__big {
+         margin: 5px 10px;
+         position: relative;
+         h2 {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+         }
+         h4 {
+            display: none;
+         }
+      }
+      &__big-link {
+         font-weight: 600;
+         font-size: 14px;
+         position: absolute;
+         display: block;
+         right: 15px;
+         bottom: 15px;
+         background: #fff;
+         color: $text;
+         padding: 4px;
+         border-radius: 13px;
+         transition: all 0.3s ease 0s;
+         max-width: 140px;
+         a {
+            margin-top: 2px;
+            padding-right: 2px;
+         }
+         a {
+            &:hover {
+               color: #fff;
+            }
+         }
+         &:hover {
+            background: $accent;
+         }
+      }
+   }
+   .title-main {
+      font-size: 33px;
+      padding-left: 45px;
+      line-height: 48px;
+   }
+   .slider-item {
+      min-height: 230px;
+      margin-top: 30px;
+      &::before {
+         left: px;
+      }
+   }
+   .slider-item__title {
+      bottom: -45px;
+   }
+   .footer__cat-img {
+      display: none;
+   }
+   .latest__text {
+      font-size: 14px;
+      margin-top: 10px;
+      padding-top: 10px;
+      padding-bottom: 60px;
+   }
+   .top-news__big-body {
+      padding-left: 0;
+   }
+   .top-news-label-big {
+      left: 0;
+   }
+
+   .top-news__big-text {
+      margin-top: 30px;
+   }
+   .latest-bg-item {
+      display: none;
+   }
+   .latest {
+      &::before {
+         display: none;
+      }
+   }
+   .footer__nav {
+      margin-top: 25px;
+   }
+   .catalog-content-news.breedpage {
+      margin-top: 40px;
+      padding-left: 0px;
+   }
+   .catalog-content .catalog-content__item-likes {
+      position: relative;
+      top: 15px;
+      left: 0px;
+   }
+   .info-about-species .catalog-content__item-likes {
+      position: relative;
+      top: 15px;
+      left: 17px;
+   }
+   .textAndslider {
+      padding-top: 140px;
+   }
+   .latest {
+      padding-bottom: 0px;
+   }
+   .catalog-content__item-body {
+      padding-left: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .news-item__date{
+      display: none;
+   }
+   .news-item__title{
+      margin-bottom: 70px;
+   }
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+   .mainscreen__body-title-h1 h1 {
+      font-size: 38px;
+      line-height: 45px;
+   }
+   .mainscreen__body-title-h2 {
+      font-size: 22px;
+      line-height: 30px;
+      margin-top: 20px;
+   }
+   .news-item__date{
+      display: block;
+   }
+   .news-item__title{
+      margin-bottom: 30px;
+   }
+   .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 21px;
+      z-index: 113;
+      right: -70%;
+   }
+   .header__burger span {
+      position: absolute;
+      background-color: $text;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+   }
+   .header__burger:before,
+   .header__burger:after {
+      content: "";
+      background-color: $text;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+   .header__burger:before {
+      top: 0;
+   }
+   .header__burger:after {
+      bottom: 0;
+   }
+
+   .header__burger.active span {
+      transform: scale(0);
+   }
+
+   .header__burger.active:before {
+      transform: rotate(45deg);
+      top: 9px;
+   }
+   .header__burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+   .header-fixed__nav.active {
+      top: 0;
+   }
+
+   .header-main__nav {
+      position: fixed;
+      top: -200%;
+      right: 0%;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      transition: all 0.3s ease 0s;
+      background-color: $accent;
+      padding: 70px 10px 20px 10px;
+      z-index: 120;
+   }
+
+   .header-fixed__nav {
+      position: fixed;
+      top: -200%;
+      right: 0%;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      transition: all 0.3s ease 0s;
+      background-color: $accent;
+      padding: 70px 10px 20px 10px;
+      z-index: 10;
+   }
+
+   .header-main__logo {
+      position: relative;
+      z-index: 150;
+   }
+   .header-fixed__logo {
+      position: absolute;
+      z-index: 150;
+      min-width: 220px;
+      top: -30px;
+   }
+   .header-main__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 100px;
+      li {
+         margin-left: 0;
+      }
+   }
+   .header-main__link {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 65px;
+      color: #fff;
+   }
+
+   .mainscreen__body {
+      margin-top: 90px;
+   }
+   .header-main__nav.active {
+      top: 0;
+   }
+   .burger-menu__button {
+      display: block;
+   }
+
+   .mainscreen__text-bottom {
+      display: none;
+   }
+   .header-main__logo.active {
+      background: #fff;
+      max-width: 260px;
+      border-radius: 20px;
+      transition: all 0.3s ease 0s;
+      padding: 7px 5px;
+      margin-top: 0px;
+   }
+
+   #is-main {
+      .header-fixed__list {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 100px;
+
+         li {
+            margin-left: 0;
+         }
+         a {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 65px;
+            color: #fff;
+         }
+      }
+      .header-fixed__logo {
+         text-align: start;
+         min-width: 180px;
+      }
+   }
+   #is-not-main {
+      .header-fixed__list {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 100px;
+
+         li {
+            margin-left: 0;
+         }
+         a {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 65px;
+            color: #fff;
+         }
+      }
+      .header-fixed__logo {
+         text-align: start;
+         min-width: 180px;
+      }
+   }
+
+   .footer__social-span {
+      font-size: 16px;
+   }
+   .catalog-content-news {
+      .title-h2 {
+         margin-top: 70px;
+      }
+   }
+   .news-arcticle {
+      .title-h2 {
+         margin-top: 10px;
+      }
+   }
+   .info-about-species__links-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+   .info-about-species__link {
+      margin: 7px 10px;
+      border-radius: 15px;
+   }
+   .black-paw {
+      display: block;
+   }
+   .orange-paw {
+      display: none;
+   }
+   .mainscreen__body-title-h1 {
+      justify-content: flex-start;
+   }
+   .slick-prev.slick-arrow {
+      top: 67%;
+      right: 55px;
+      z-index: 200;
+      width: 40px;
+      height: 40px;
+   }
+   .slider .slick-next.slick-arrow {
+      top: 67%;
+      left: 70px;
+      z-index: 200;
+      width: 40px;
+      height: 40px;
+   }
+   .slider {
+      transform: translate(0%, -50%);
+   }
+}
+/**/
+
+@media only screen and (max-width: 767px) {
+   .searchline {
+      padding: 40px 0px;
+      &__tags-body {
+         margin-top: 40px;
+      }
+   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+   .info-about-species__share {
+      padding-top: 30px;
+   }
+   .info-about-species__share-list.gereral-page-share-list {
+      display: flex;
+      flex-direction: row;
+      li {
+         margin: 20px 10px 0px 10px;
+      }
+   }
+   .burger-menu__button {
+      display: block;
+      left: 13%;
+      top: 120px;
+      transform: translate(-60%);
+   }
+   .mainscreen__body-input {
+      max-width: 180px;
+   }
+   .mainscreen__body-title-h2 {
+      color: $text;
+      font-weight: 500;
+   }
+   .header-main__logo {
+      margin-right: 10px;
+      margin-top: 5px;
+   }
+   .header__burger {
+      right: -360%;
+   }
+   .search-box {
+      background: none;
+      padding-left: 20px;
+      padding: 0px 30px 0px 5px;
+   }
+   .search-btn {
+      right: 0;
+   }
+   .search-box {
+      &:hover {
+         box-shadow: none;
+      }
+   }
+   .bg-item {
+      display: none;
+   }
+   .slider .slick-next.slick-arrow {
+      transform: translate(-80%, -100%);
+   }
+   .footer__link {
+      font-size: 15px;
+   }
+   .footer__sublink {
+      font-size: 13px;
+   }
+   .latest__title {
+      font-size: 16px;
+   }
+   .latest__btn {
+      bottom: 6px;
+   }
+   .catalog-content-news.breedpage {
+      margin-top: 0px;
+   }
+   .title-h1 {
+      font-size: 34px;
+      line-height: 42px;
+   }
+   .not-found-section {
+      padding: 60px 0px 120px 0px;
+   }
+   .not-found-section__number {
+      font-size: 100px;
+   }
+   .catalog-content__item-body {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+   }
+   .hidden-input {
+      max-width: 290px;
+   }
+   .title-main {
+      font-size: 30px;
+      line-height: 39px;
+      margin-left: 25px;
+   }
+   .footer__nav {
+      margin-left: -25px;
+   }
+   .footer__sublist {
+      margin-left: -15px;
+   }
+   .info-about-species__enumeration-title {
+      &::after {
+         right: -13px;
+      }
+   }
+}
+/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 340px) {
+   .catalog-content__item-subtitle {
+      font-size: 12px;
+   }
+   .catalog-content__item-btn {
+      padding: 3px;
+      font-size: 11px;
+      margin-left: 3px;
+   }
+   .black-paw {
+      display: none;
+   }
+}
+/**/
