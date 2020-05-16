@@ -129,12 +129,43 @@ jQuery(document).ready(function () {
       }
    });
 
-   ;
 
 
-   $('.').on('click', function (e) {
-      $('html,body').stop().animate({ scrollTop: $('#some_point').offset().top }, 1000);
-      e.preventDefault();
+   jQuery('a[data-target^="anchor"]').bind('click.smoothscroll', function () {
+      var target = $(this).attr('href'),
+         bl_top = $(target).offset().top - 150;
+      jQuery('body,html').animate({ scrollTop: bl_top }, 700);
+      return false;
+   })
+
+   jQuery('.tabs__content').not(":first").hide();
+   jQuery('.tabs .tabs__link').click(function () {
+      jQuery('.tabs .tabs__link').removeClass('active').eq($(this).index()).addClass('active');
+      jQuery('.tabs__content').hide().eq($(this).index()).fadeIn()
+   }).eq(0).addClass('active');
+
+
+
+
+
+   $(document).ready(function () {
+      $('.popup-gallery').magnificPopup({
+         delegate: 'a',
+         type: 'image',
+         tLoading: 'Loading image #%curr%...',
+         mainClass: 'mfp-img-mobile',
+         gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+         },
+         image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+               return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+         }
+      });
    });
 
 });
