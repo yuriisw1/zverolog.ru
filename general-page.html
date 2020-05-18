@@ -84,7 +84,7 @@
                <div class="searchline__search-block">
                   <input type="text" placeholder="Быстрый поиск породы" class="searchline__search-input">
                   <img class="searchline__search-input-icon" src="img/icons/search.svg" alt="">
-                  <a href="#" id="" class="searchline__search-button">Go</a>
+                  <a href="#" class="searchline__search-button">Go</a>
                </div>
             </div>
             <div class="col-md-5 offset-lg-1">
@@ -117,7 +117,7 @@
    <!--=================== SECTION ENDS =========================================-->
 
 
-   <section class="catalog-content">
+   <div class="catalog-content">
       <div class="container">
 
          <div class="row align-items-center justify-content-center">
@@ -158,8 +158,8 @@
                      </div>
                   </div>
                   <div class="col-lg-4 order-1 order-lg-2 d-flex justify-content-center mt-lg-0 mt-4">
-                     <img class="lazy img-fluid" style="border-radius: 40px;" data-src="img/10.jpg"
-                        alt="Фото поинтера">
+                     <img class="lazy img-fluid" src="img/10.jpg" style="border-radius: 40px; max-height: 250px;"
+                        data-src="img/10.jpg" alt="Фото поинтера">
                   </div>
                </div>
 
@@ -241,7 +241,7 @@
                         конкретные выводы, разумеется, подвергнуты целой серии независимых исследований.е
                      </p>
                      <div class="info-about-species__content-img">
-                        <img data-src="img/cat-slider.jpg" class="img-fluid lazy" alt="">
+                        <img data-src="img/cat-slider.jpg" src="img/cat-slider.jpg" class="img-fluid lazy" alt="">
                      </div>
                      <p> Задача организации, в особенности же дальнейшее развитие различных форм деятельности
                         Задача организации, в особенности же дальнейшее развитие различных форм деятельности
@@ -271,7 +271,7 @@
                         Заголовок
                      </div>
                      <div class="info-about-species__content-img">
-                        <img data-src="img/cat-slider.jpg" class="img-fluid lazy" alt="">
+                        <img data-src="img/cat-slider.jpg" src="img/cat-slider.jpg" class="img-fluid lazy" alt="">
                      </div>
                      <p>
                         Но синтетическое тестирование создаёт предпосылки для своевременного выполнения сверхзадачи.
@@ -317,7 +317,7 @@
                      <div class="catalog-content__item">
                         <a class="stretched-link" href="breed.html"></a>
                         <div class="catalog-content__item-img">
-                           <img class="lazy" data-src="img/7.jpg" alt="">
+                           <img class="lazy" src="img/7.jpg" data-src="img/7.jpg" alt="">
                         </div>
                         <div class="catalog-content__item-body">
                            <span class="catalog-content__item-title">Английский пойнтер</span>
@@ -341,7 +341,7 @@
                      <div class="catalog-content__item">
                         <a class="stretched-link" href="breed.html"></a>
                         <div class="catalog-content__item-img">
-                           <img class="lazy" data-src="img/7.jpg" alt="">
+                           <img class="lazy" src="img/7.jpg" data-src="img/7.jpg" alt="">
                         </div>
                         <div class="catalog-content__item-body">
                            <span class="catalog-content__item-title">Английский пойнтер</span>
@@ -365,7 +365,7 @@
                      <div class="catalog-content__item">
                         <a class="stretched-link" href="breed.html"></a>
                         <div class="catalog-content__item-img">
-                           <img class="lazy" data-src="img/7.jpg" alt="">
+                           <img class="lazy" src="img/7.jpg" data-src="img/7.jpg" alt="">
                         </div>
                         <div class="catalog-content__item-body">
                            <span class="catalog-content__item-title">Английский пойнтер</span>
@@ -389,7 +389,7 @@
                      <div class="catalog-content__item">
                         <a class="stretched-link" href="breed.html"></a>
                         <div class="catalog-content__item-img">
-                           <img class="lazy" data-src="img/7.jpg" alt="">
+                           <img class="lazy" src="img/7.jpg" data-src="img/7.jpg" alt="">
                         </div>
                         <div class="catalog-content__item-body">
                            <span class="catalog-content__item-title">Английский пойнтер</span>
@@ -421,11 +421,11 @@
                         <div class="commentbar__input-title">
                            Ваше имя
                         </div>
-                        <input class="commentbar__input" type="text" name="" class="commentbar__input">
+                        <input class="commentbar__input" type="text" name="comment-input">
                         <div class="commentbar__input-title">
                            Ваш комментарий
                         </div>
-                        <textarea name="" id="" cols="30" rows="10" class="commentbar__textarea"></textarea>
+                        <textarea name="comment-textarea" cols="30" rows="10" class="commentbar__textarea"></textarea>
                         <button>Оправить</button>
                      </form>
                   </div>
@@ -480,7 +480,7 @@
 
          </div>
       </div>
-   </section>
+   </div>
 
 
 
@@ -506,7 +506,7 @@
       <div class="container">
          <div class="row ">
             <div class="col-lg-3 col-12 d-flex flex-column align-items-center">
-               <img class="lazy" data-src="img/Logo.png" alt="">
+               <img class="lazy" src="img/Logo.png" data-src="img/Logo.png" alt="">
                <div class="footer__label">
                   <span>
                      @ 2020 «Зверолог.ru»
@@ -545,7 +545,7 @@
                </div>
             </div>
             <div class="col-lg-3 col-12 footer__cat-img  ">
-               <img class="lazy" data-src="img/footer-cat.png" alt="">
+               <img class="lazy" src="img/footer-cat.png" data-src="img/footer-cat.png" alt="">
             </div>
          </div>
       </div>
